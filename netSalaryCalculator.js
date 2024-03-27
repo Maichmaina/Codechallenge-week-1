@@ -1,6 +1,6 @@
 // prompts the user to input basic salary and benefits.
 const prompt = require("prompt-sync")({ sigint: true });
-const basicsalary = prompt ("Please enter your basicsalary")
+let basicSalary = parseFloat(prompt("Please enter the basic salary:"));
 let benefits = prompt("Please enter your benefits")
 
 // Function to calculate the payee

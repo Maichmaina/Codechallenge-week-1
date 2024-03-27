@@ -17,6 +17,9 @@ function calculategrade(marks) {
 }
 console.log(prompt);
 let marks = prompt("Pleaseinputstudentmarks(0-100)")
+if (marks < 0 || marks > 100) {
+    console.log("Invalid input. Marks should be between 0 and 100.");
+}
 let grade = calculategrade(marks)
 
 console.log(grade)
